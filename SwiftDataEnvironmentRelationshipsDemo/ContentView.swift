@@ -30,14 +30,13 @@ struct ContentView: View {
   // updates the view as expected.
   var body: some View {
     VStack {
-      Text("This one works")
+      Text("Updating the subitem in this view works")
       HStack {
         Text(String(subItem.value))
         Button("Toggle") {
           subItem.value.toggle()
         }
-      }
-      Text("This one does not")
+      }.padding(.bottom)
       ChildView()
         .environment(item)
     }
@@ -59,11 +58,21 @@ struct ChildView: View {
   // the value does not update *this* instance of the view, but the parent view
   // where the item comes from the query does update.
   var body: some View {
-    HStack {
-      Text(String(subItem.value))
-      Button("Toggle") {
-        subItem.value.toggle()
-      }
+    VStack {
+      Text("This is the subitem value via the environment. It doesn't update.")
+      HStack {
+        Text(String(subItem.value))
+        Button("Toggle") {
+          subItem.value.toggle()
+        }
+      }.padding(.bottom)
+      Text("This is the main item via the environment. It updates fine.")
+      HStack {
+        Text("\(item.timestamp, format: Date.FormatStyle(date: .complete, time: .complete))")
+        Button("Update") {
+          item.timestamp = Date()
+        }
+      }.padding(.bottom)
     }
   }
 }
