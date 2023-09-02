@@ -26,6 +26,8 @@ struct ContentView: View {
     return subItem
   }
 
+  // In this view the relationship item comes from the query. Toggling the value
+  // updates the view as expected.
   var body: some View {
     VStack {
       Text("This one works")
@@ -53,6 +55,9 @@ struct ChildView: View {
     return subItem
   }
 
+  // In this view, the relationship item comes in via the environment. Toggling
+  // the value does not update *this* instance of the view, but the parent view
+  // where the item comes from the query does update.
   var body: some View {
     HStack {
       Text(String(subItem.value))
