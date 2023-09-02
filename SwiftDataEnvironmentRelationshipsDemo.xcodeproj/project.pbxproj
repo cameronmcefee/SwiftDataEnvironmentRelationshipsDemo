@@ -11,9 +11,7 @@
 		CA62AC702AA2F91700B44CCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62AC6F2AA2F91700B44CCA /* ContentView.swift */; };
 		CA62AC722AA2F91800B44CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA62AC712AA2F91800B44CCA /* Assets.xcassets */; };
 		CA62AC762AA2F91800B44CCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA62AC752AA2F91800B44CCA /* Preview Assets.xcassets */; };
-		CA62AC802AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62AC7F2AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoTests.swift */; };
-		CA62AC8A2AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62AC892AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoUITests.swift */; };
-		CA62AC8C2AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62AC8B2AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoUITestsLaunchTests.swift */; };
+		CA62AC992AA2F95200B44CCA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62AC982AA2F95200B44CCA /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +39,8 @@
 		CA62AC732AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftDataEnvironmentRelationshipsDemo.entitlements; sourceTree = "<group>"; };
 		CA62AC752AA2F91800B44CCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA62AC7B2AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDataEnvironmentRelationshipsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA62AC7F2AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataEnvironmentRelationshipsDemoTests.swift; sourceTree = "<group>"; };
 		CA62AC852AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDataEnvironmentRelationshipsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA62AC892AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataEnvironmentRelationshipsDemoUITests.swift; sourceTree = "<group>"; };
-		CA62AC8B2AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataEnvironmentRelationshipsDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA62AC982AA2F95200B44CCA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				CA62AC6C2AA2F91700B44CCA /* SwiftDataEnvironmentRelationshipsDemo */,
-				CA62AC7E2AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoTests */,
-				CA62AC882AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoUITests */,
 				CA62AC6B2AA2F91700B44CCA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +91,7 @@
 			children = (
 				CA62AC6D2AA2F91700B44CCA /* SwiftDataEnvironmentRelationshipsDemoApp.swift */,
 				CA62AC6F2AA2F91700B44CCA /* ContentView.swift */,
+				CA62AC982AA2F95200B44CCA /* Models.swift */,
 				CA62AC712AA2F91800B44CCA /* Assets.xcassets */,
 				CA62AC732AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemo.entitlements */,
 				CA62AC742AA2F91800B44CCA /* Preview Content */,
@@ -110,23 +105,6 @@
 				CA62AC752AA2F91800B44CCA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		CA62AC7E2AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				CA62AC7F2AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoTests.swift */,
-			);
-			path = SwiftDataEnvironmentRelationshipsDemoTests;
-			sourceTree = "<group>";
-		};
-		CA62AC882AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CA62AC892AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoUITests.swift */,
-				CA62AC8B2AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoUITestsLaunchTests.swift */,
-			);
-			path = SwiftDataEnvironmentRelationshipsDemoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA62AC702AA2F91700B44CCA /* ContentView.swift in Sources */,
+				CA62AC992AA2F95200B44CCA /* Models.swift in Sources */,
 				CA62AC6E2AA2F91700B44CCA /* SwiftDataEnvironmentRelationshipsDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA62AC802AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA62AC8A2AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoUITests.swift in Sources */,
-				CA62AC8C2AA2F91800B44CCA /* SwiftDataEnvironmentRelationshipsDemoUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
